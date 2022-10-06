@@ -95,3 +95,23 @@ void eval()
 	}
 	printf("The answer is = %lf",ans);
 }
+out put :_
+Microsoft Windows [Version 10.0.22000.978]
+
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\venup>cd C:\Users\venup\OneDrive\Desktop
+
+C:\Users\venup\OneDrive\Desktop>set path=C:\Program Files (x86)\Gnulin3
+
+C:\Users\venup\OneDrive\Desktop>flex cal.1.txt
+
+C:\Users\venup\OneDrive\Desktop>set path-C:\MinGW\bin
+
+C:\Users\venup\OneDrive\Desktop>gcc lex.yy.c
+
+C:\Users\venup\OneDrive\Desktop>a
+
+8+9
+
+The answer is 17.000000
