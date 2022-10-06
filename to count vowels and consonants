@@ -1,0 +1,45 @@
+%{
+	#include<stdio.h>
+	int vow=0, con=0;
+%}
+
+%%
+[ \t\n]+    ;
+[aeiouAEIOU]+    {vow++;}
+[^aeiouAEIOU]     {con++;}
+%%
+
+int main( )
+{
+	printf("Enter some input string:\n");
+	yylex();
+	printf("Number of vowels=%d\n",vow);
+	printf("Number of consonants=%d\n",con);
+}
+
+int yywrap( )
+{
+	return 1;
+}
+
+out put
+Microsoft Windows [Version 10.0.22000.978]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\91767>cd C:\Users\91767\OneDrive\Desktop
+
+C:\Users\91767\OneDrive\Desktop>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\91767\OneDrive\Desktop>flex vowels.l.txt
+
+C:\Users\91767\OneDrive\Desktop>set path=C:\MinGW\bin
+
+C:\Users\91767\OneDrive\Desktop>gcc lex.yy.c
+
+C:\Users\91767\OneDrive\Desktop>a.exe
+Enter some input string:
+hello world
+Number of vowels=3
+Number of consonants=7
+
+C:\Users\91767\OneDrive\Desktop>
